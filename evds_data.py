@@ -5,7 +5,7 @@ import pandas as pd
 
 
 class GetData():
-    def __init__(self) -> None:
+    def __init__(self,start_date,end_date,api_key) -> None:
         self.series_codes = ["TP.KTF11", ## Tasit kredisi faiz oranları
             "TP.FG.J071", ## Arac satin alimi tüfe
             "TP.FG.J0", ## Genel enflasyon tüfe
@@ -59,9 +59,9 @@ class GetData():
 
 
         ## Parameters
-        self.api_key = 'api-key'
-        self.start_date='01-01-2014' # Başlangıç
-        self.end_date='01-07-2024' # Bitiş
+        self.api_key = api_key#'lLjoPeTFAK'
+        self.start_date = start_date#'01-01-2014' # Başlangıç
+        self.end_date= end_date#'01-07-2024' # Bitiş
         self.frequency='5' # Aylık
         self.agg_type = 'avg'
         self.params = {
