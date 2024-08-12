@@ -59,9 +59,9 @@ class GetData():
 
 
         ## Parameters
-        self.api_key = api_key#'lLjoPeTFAK'
-        self.start_date = start_date#'01-01-2014' # Başlangıç
-        self.end_date= end_date#'01-07-2024' # Bitiş
+        self.api_key = api_key
+        self.start_date = start_date
+        self.end_date= end_date
         self.frequency='5' # Aylık
         self.agg_type = 'avg'
         self.params = {
